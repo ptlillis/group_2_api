@@ -9,8 +9,8 @@ Parsing different objects from several APIs, the Sounds of your Birth will be a 
 
 Mockup:
 
-(../assets/Screen Shot 2020-12-15 at 8.37.21 PM.png)
-(../assets/Screen Shot 2020-12-15 at 9.16.07 PM.png)
+(./assets/Screen Shot 2020-12-15 at 8.37.21 PM.png)
+(./assets/Screen Shot 2020-12-15 at 9.16.07 PM.png)
 
 Team Members:
 Zaid A: CSS, HTML, JS
