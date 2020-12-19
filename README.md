@@ -17,3 +17,6 @@ Zaid A: CSS, HTML, JS
 Mishel B: CSS, HTML, wireframing, API research
 Arjun G: JS, API research, ajax
 Peter L: repo management, API research, ajax, HTML wireframing, CSS
+
+
+testing again
