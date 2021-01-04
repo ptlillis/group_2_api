@@ -1,11 +1,138 @@
-.container {
-text-align: center;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+*,*::before, *::after{
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  body{
+      padding: 0;
+      margin: 0;
+      background-color: rgba(78, 10, 109, 0.1);
+      background-image: url(background.png);
+      background-size: cover no-repeat;
+      
+      
+  }
+.header{
+    width: 100%;
+    height: 70px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    line-height: 60px;
 }
-#song {
 
-background-color: white;
-
-
-
+.inputdiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: left;
 }
+#input{
+    outline: none;
+    width: 70%;
+    height: 50px;
+  background-color: #4a148c;
+    position: relative;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#input:hover{
+    background-color: #4c1f68;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+/*search button*/
+.search-button{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    float: right;
+    position: relative;
+    outline: none;
+}
+.search-button:hover{
+    background-color: #69328b;
+    box-shadow: 0 0 10px 10px rgb(223, 199, 199);
+    color: white;
+    font-size: 2.5rem;
+}
+.second-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.heading-4{
+    color: #6a1b9a;
+    font-weight: 500;
+}
+.heading5{
+    color: #646464 ;
+   
+}
+.input-div{
+    padding: 10px;
+}
+.minutes-div{
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    text-align: center;
+    
+}
+.zodiac-div{
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    text-align: center;
+   
+}
+.third-row, .last-row{
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    align-items: center;
+    justify-content: center;
+}
+.artist, .youtube, .track{
+    height: 460px;
+    align-items: center;
+    text-align: center;
+}
+.video-wrapper{
+    height:450px;
+    width:100%;
+    border: 5px solid rgba(78, 10, 109, 0.5 );
+    border-radius: 15px;
+    box-shadow: 0 0 10px  black;
+    z-index: 1;
+}
+.youtube-div{
+    height: 100%;
+    width: 100%;
+    border: 5px solid rgba(78, 10, 109, 0.5);
+    border-radius: 5px;
+}
+.track, .artist{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.gify-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.zodiac, .artist-info, .heading5{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
