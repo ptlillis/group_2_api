@@ -195,7 +195,7 @@ function apicall() {
                     .then(result => {
                         var embedlink = result['items']['1']['link'];
                         var iframe = document.createElement("iframe");
-                    
+                  
                         console.log(result);
                           var res = embedlink.split("=");
                           var embeddedUrl = "https://www.youtube.com/embed/"+res[1];
