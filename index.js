@@ -1,9 +1,12 @@
+var player = document.querySelector("#player");
+var birthdayimage = document.querySelector('#birthdayimg');
 var minuteLived = document.querySelector('.heading5');
 var zodiacv = document.querySelector("#zodiac");
 var youtubediv = document.querySelector(".youtube-div");
 var gifydiv = document.querySelector(".gify-div");
 var trackinfo = document.querySelector(".track");
 var artist = document.querySelector(".artist")
+
 console.log("app is connected")
 $(document).ready(function () {
     // setting up the max date input to limit the input value
@@ -194,13 +197,15 @@ function apicall() {
                     .then(response => response.json())
                     .then(result => {
                         var embedlink = result['items']['1']['link'];
-                        var iframe = document.createElement("iframe");
-                  
+                        //var iframe = document.createElement("iframe");
+                        //iframe.setAttribute("style","height=100%");
+                        //iframe.setAttribute("style","width=100%");
                         console.log(result);
+                        birthdayimage.classList.add("hide")
                           var res = embedlink.split("=");
                           var embeddedUrl = "https://www.youtube.com/embed/"+res[1];
-                          iframe.src = embeddedUrl;
-                          youtubediv.append(iframe);  
+                          player.src = embeddedUrl;
+                          //youtubediv.append(iframe);
                     })
                     .catch(error => console.log('error', error));
                    
