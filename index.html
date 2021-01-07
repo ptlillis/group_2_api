@@ -4,49 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!--Import Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-          
-            <link rel="stylesheet" href="./assets/css/all.min.css">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Birthday sound</title>
     <script src="https://kit.fontawesome.com/42ee12ba66.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body >
+<body>
     <div class="header-div">
-        <header class="header #4a148c purple darken-4"> Your Birthday Sound!!</header>
+        <header class="header #4a148c purple darken-4">Your Birthday Sound</header>
     </div>
     <div class="container-fluid ">
-        
+
         <div class="row second-row">
             <div class="input-div col-lg-6 col-sm-12 col-md-6 col-xl-4">
-                    <div class="inputdiv">
-                     <input  type="date" id="input"  required min = "1920-01-01" >
-                        <a class="btn-floating btn-large btn-primary #4a148c purple darken-3"><i class="material-icons search-button">search</i></a>
-                    </div>
+                <div class="inputdiv">
+                    <input type="date" id="input" required min="1920-01-01">
+                    <a class="btn-floating btn-large btn-primary #4a148c purple darken-3"><i
+                            class="material-icons search-button">search</i></a>
+                </div>
             </div>
+
+
+
             <div class="minutes-div col-lg-6 col-sm-12 col-md-6 col-xl-4">
-                    <h4 class="heading-4 ">Minutes You Lived: </h4>
-                    <h5 class="heading5"></h5>
+                <h4 class="heading-4 ">Minutes You Lived: </h4>
+                <h5 class="heading5"></h5>
 
             </div>
             <div class="zodiac-div col-lg-6 col-sm-12 col-md-6 col-xl-4">
-                    <h4 class="heading-4"> Your Zodizc:</h4>
-                    <h5 class="zodiac" id="zodiac"></h5>
+                <h4 class="heading-4"> Your Zodiac: </h4>
+                <h5 class="zodiac" id="zodiac"></h5>
+                <!-- <div class="card">
+                    <div class="card-image">
+                        <img src="./zodiacicons/aquarius.png">
+                        <span class="card-title">Aquarius</span> -->
+                    <!-- </div>
+                </div> -->
             </div>
         </div>
         <div class="row third-row">
-            
+
             <div class=" artist col-sm-12 col-md-4 col-lg-3 ">
                 <h4>Artist Info</h4>
                 <div class="artist-div">
@@ -56,8 +66,7 @@
             <div class=" youtube col-sm-12 col-md-8 col-lg-6 ">
                 <div class="video-wrapper">
                     <div class=" youtube-div">
-                        <img id = "birthdayimg" src="./assets/birthday-tape.jpg" alt="birthday tape" height="100%" width="100%" allow="autoplay; encrypted-media" allowfullscreen>
-                        <iframe id = "player" src="" frameborder="0" height="100%" width="100%"></iframe>
+
 
                     </div>
                 </div>
@@ -68,21 +77,21 @@
                     <h4 class="track"> </h4>
                 </div>
             </div>
-          </div>
-          <div class="row last-row ">
-                <div class=" s12 m12 lg12">
-                    <div class="gify-div">
+        </div>
+        <div class="row last-row ">
+            <div class=" s12 m12 lg12">
+                <div class="gify-div">
 
-                    </div>
-                
+                </div>
+
+            </div>
+
         </div>
-        
-        </div>
-</div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="index.js"></script>
+    </div>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
