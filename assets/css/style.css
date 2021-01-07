@@ -8,7 +8,7 @@
       margin: 0;
       background: url('updatedbac.jpg');
       background-size: cover no-repeat;
-      /*background: linear-gradient(90deg,#4458DC 0%, #854FEE 100%);*/
+      
       
   }
 .header{
@@ -127,7 +127,7 @@
 .video-wrapper{
     height:450px;
     width:100%;
-    border: 5px solid rgba(78, 10, 109, 1 );
+    border: 5px solid #62349b;
     border-radius: 15px;
     box-shadow: 0 0 10px  black;
     z-index: 1;
@@ -135,7 +135,7 @@
 .youtube-div{
     height: 100%;
     width: 100%;
-    border: 5px solid rgba(78, 10, 109, 1);
+    border: 5px solid rgba(98, 52, 155, 1);
     border-radius: 5px;
 }
 .track .artist{
