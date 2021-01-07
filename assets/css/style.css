@@ -69,14 +69,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.heading-4{
-    color: #6a1b9a;
-    font-weight: 500;
-}
-.heading5{
-    color: #646464 ;
-   
-}
+
+
 .input-div{
     padding: 10px;
 }
@@ -135,10 +129,7 @@
     font-weight: 600;
 }
 
-#birthdayimg{
-    height: 100%;
-    width: 100%;
-}
+
 
 .hide{
     display: none;
