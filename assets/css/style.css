@@ -6,10 +6,9 @@
   body{
       padding: 0;
       margin: 0;
-      background-color: rgba(78, 10, 109, 0.1);
-      background-image: url(background.png);
+      background-color: rgba(78, 10, 109, 0.2);
       background-size: cover no-repeat;
-      
+      /*background: linear-gradient(90deg,#4458DC 0%, #854FEE 100%);*/
       
   }
 .header{
@@ -110,7 +109,7 @@
 .video-wrapper{
     height:450px;
     width:100%;
-    border: 5px solid rgba(78, 10, 109, 0.5 );
+    border: 5px solid rgba(78, 10, 109, 1 );
     border-radius: 15px;
     box-shadow: 0 0 10px  black;
     z-index: 1;
@@ -118,7 +117,7 @@
 .youtube-div{
     height: 100%;
     width: 100%;
-    border: 5px solid rgba(78, 10, 109, 0.5);
+    border: 5px solid rgba(78, 10, 109, 1);
     border-radius: 5px;
 }
 .track, .artist{
