@@ -6,7 +6,7 @@
   body{
       padding: 0;
       margin: 0;
-      background-color: rgba(78, 10, 109, 0.2);
+      background: url('updatedbac.jpg');
       background-size: cover no-repeat;
       /*background: linear-gradient(90deg,#4458DC 0%, #854FEE 100%);*/
       
@@ -30,39 +30,63 @@
     padding: 10px;
     align-items: left;
 }
+.date{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 #input{
     outline: none;
     width: 70%;
     height: 50px;
-  background-color: #4a148c;
+  background-color: white;
     position: relative;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
     padding: 5px;
+    font-size: 1.5rem;
 }
 #input:hover{
-    background-color: #4c1f68;
-    color: white;
+    box-shadow: 0 0 10px blueviolet;
     font-size: 1.5rem;
     font-weight: 450;
 }
 /*search button*/
 .search-button{
-    height: 50px;
-    width: 50px;
+    all: unset;
+    outline: none;
+    border-style: none;
+    background-color: #4a148c;
+    color: blue;
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    border-radius: 50px;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
-    float: right;
-    position: relative;
-    outline: none;
+    
+   
 }
 .search-button:hover{
-    background-color: #69328b;
-    box-shadow: 0 0 10px 10px rgb(223, 199, 199);
-    color: white;
-    font-size: 2.5rem;
+    all: unset;
+    box-shadow: 0 0 10px 1px black;
+    font-size: 2rem;
+    font-weight: 450;
+    background-color: #4a148c;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+ .search-icon{
+    font-size: 2rem;
+    color: blue;
 }
 .second-row{
     display: flex;
@@ -77,7 +101,7 @@
 .minutes-div{
     align-items: center;
     justify-content: center;
-    padding:20px;
+    padding:10px;
     text-align: center;
     
 }
@@ -114,7 +138,7 @@
     border: 5px solid rgba(78, 10, 109, 1);
     border-radius: 5px;
 }
-.track, .artist{
+.track .artist{
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -134,4 +158,55 @@
 .hide{
     display: none;
 }
+.card{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}
+.zodiac-car-title{
+    padding: 1.5rem;
+}
+.birthday-image{
+    height: 100%;
+    width: 100%;
+}
+.heading-4{
+    padding: 10px;
+}
+.zodiac-image-div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
+    
+}
+.track-col .song-col{
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.card-panel{
+    background-color: #e5d3e9;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.artist-info{
+    color: rgb(61, 60, 60);
+}
+.track-info{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.error{
+    color: red;
+    font-size: 1rem;
+}

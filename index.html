@@ -31,23 +31,28 @@
 
         <div class="row second-row">
             <div class="input-div col-lg-6 col-sm-12 col-md-6 col-xl-4">
+                <div class="date">
+                <h4>Please enter your date of birth</h4>
+                </div>
                 <div class="inputdiv">
+                    
                     <input type="date" id="input" required min="1920-01-01">
-                    <a class="btn-floating btn-large btn-primary #4a148c purple darken-3"><i
-                            class="material-icons search-button">search</i></a>
+                    <a class=" search-button btn-floating btn-large btn-primary #4a148c purple darken-3"><i
+                            class=" search-icon fas fa-search"></i></a>
+                            <div class="error"></div>
                 </div>
             </div>
         </div>
 
 
-        <div class="row third-row">
-            <div class="col s4">
+        <div class="row third-row hide">
+            <div class="col  col-sm-16 col-md-4 col-lg-4 ">
                 <!-- Promo Content 1: Artist Information -->
-                <div class="artist col-sm-12 col-md-4 col-lg-3 ">
+                <div class="artist track-col ">
                     <div class="artist-div">
-                        <h4>Artist Information</h4>
+                        <h4>Artist</h4>
                         <div class="artistinfo">
-                            <h5 class="artist-info"></h5>
+                            <h6 class="artist-info"></h6>
                         </div>
                     </div>
                 </div>
@@ -58,15 +63,12 @@
                 <!-- Minutes lived -->
                 <div class="card-div">
                     <div class="row">
-                        <div class="card-panel deep-purple lighten-4">
-                            <div class="minutes-div col-lg-6 col-sm-12 col-md-6 col-xl-4">
-                                <div class="col s2">
-                                    <h4 class="heading-4 ">Minutes You Lived: </h4>
+                        <div class="card  deep-purple lighten-4">
+                            <h5>Minutes You Lived: </h5>
+                            <div class="minutes-div col-lg-3 col-sm-8 col-md-6 col-xl-3">
+                                <div class=" card-content col">
+                                <h5 class="minutes"></h5>
                                 </div>
-                                <div class="col s2">
-                                    <h5 class="heading5"></h5>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -74,28 +76,29 @@
                 <!-- Zodiac sign -->
                 <div class="card-div">
                     <div class="row">
-                        <div class="card-panel deep-purple lighten-4">
-                            <div class="zodiac-div col-lg-6 col-sm-12 col-md-6 col-xl-4">
-                                <div class="col s6">
-                                    <h4 class="heading-4"> Your Zodiac: </h4>
-                                    <h5 class="zodiac" id="zodiac"></h5>
+                        <div class="card  deep-purple lighten-4">
+                            <h5>Your zodiac: </h5>
+                            <div class="zodiac-div col-lg-3 col-sm-8 col-md-6 col-xl-3">
+                                <div class=" card-content col">
+                                    <img class="zodiac-image" src="" alt="">
                                 </div>
-                                <div class="col s6">
-                                    <img src="./zodiacicons/aquarius.png">
-                                    <span class="card-title">Aquarius</span>
+                                <div class="col">
+                                    <h5 class="zodiac-card-title"></h5>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col s4">
-                <!-- Promo Content 3:track information -->
-                <div class=" track col-sm-12 col-md-12 col-lg-3 ">
-                    <h4>Track Information</h4>
+            <div class="song-col col col-sm-16 col-md-4 col-lg-4   ">
+                <!-- Promo Content 3:track information no of weeks.  -->
+                <div class=" track-info">
+                    <h4>Song </h4>
                     <div class="track-info card-content">
-                        <h4 class="track"> </h4>
+                        <h5 class="song"></h5>
+                        <h5 class="track"> </h5>
                     </div>
                 </div>
 
@@ -109,9 +112,12 @@
 
         <div class="row fourth-row">
 
-            <div class=" youtube col-sm-12 col-md-8 col-lg-6 ">
+            <div class=" youtube  col-sm-12 col-md-10 col-lg-8 col-xl-7 ">
                 <div class="video-wrapper">
                     <div class=" youtube-div">
+                        <img class = "birthday-image" src="./assets/css/newbac.jpg" alt="">
+                        <iframe class= "player" src="" width="100%" height="100%" style="border:none;">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -120,10 +126,10 @@
 
         </div>
 
-        <div class="row last-row ">
-            <div class=" container s12 m12 lg12">
+        <div class="row last-row hide ">
+            <div class=" container-fluid s12 m12 lg12">
                 <div class="gify-div">
-                    gifs go here
+                
                 </div>
             </div>
 
