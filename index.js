@@ -66,23 +66,21 @@ $(document).ready(function () {
     var  zodiac= ["Aries","Taurus", 'Gemini',"Cancer", 'Leo',"Virgo", 'Libra',"Scorpius", 'Sagittarius',"Capricornus", 'Aquarius','Pisces'];
      if ((inputmonth == 1 && inputday >= 19) || (inputmonth == 2 && inputday <= 18)) {
          //Aquarius
-         console.log("your zodiac is", zodiac[10])  
-          zodiacimage.src = "./zodiacicons/aquarius.png"
-          zodiacCardTitle.textContent = zodiac[10];
+        console.log("your zodiac is", zodiac[10])  
+        zodiacimage.src = "./zodiacicons/aquarius.png"
+        zodiacCardTitle.textContent = zodiac[10];
      }
    else if ((inputmonth == 2 && inputday >= 19) || (inputmonth == 3 && inputday <= 20)) {
        //pisces
-       console.log("your zodiac is", zodiac[11]);
-       zodiacv.textContent = zodiac[11]; 
-       zodiacimage.src = "./zodiacicons/pisces.png"
-          zodiacCardTitle.textContent = zodiac[11]; 
+        console.log("your zodiac is", zodiac[11]);
+        zodiacimage.src = "./zodiacicons/pisces.png"
+        zodiacCardTitle.textContent = zodiac[11]; 
    }
    else if ((inputmonth == 3 && inputday >= 21) || (inputmonth == 4 && inputday <= 19)) {
        //Aries
-       console.log('your zodiac is ', zodiac[0]) ;
-       //zodiacv.textContent = zodiac[0];  
-       zodiacimage.src = "./zodiacicons/aries.png"
-          zodiacCardTitle.textContent = zodiac[0];;
+       console.log('your zodiac is ', zodiac[0]) ;  
+        zodiacimage.src = "./zodiacicons/aries.png"
+        zodiacCardTitle.textContent = zodiac[0];;
    }
    else if ((inputmonth == 4 && inputday >= 20) || (inputmonth == 5 && inputday <= 20)) {
        //Taurus
@@ -93,24 +91,21 @@ $(document).ready(function () {
    }
    else if ((inputmonth == 5 && inputday >= 21) || (inputmonth == 6 && inputday <= 20)) {
        //gemini
-       console.log("your zodiac is ", zodiac[2]);
-       //zodiacv.textContent = zodiac[2];
+        console.log("your zodiac is ", zodiac[2]);
         zodiacimage.src = "./zodiacicons/gemini.png"
         zodiacCardTitle.textContent = zodiac[2];
    }
    else if ((inputmonth == 6 && inputday >= 22) || (inputmonth == 7 && inputday <= 22)) {
        //Cancer
-       console.log("your zodiac is ", zodiac[3]);  
-       //zodiacv.textContent = zodiac[3];
+        console.log("your zodiac is ", zodiac[3]);  
         zodiacimage.src = "./zodiacicons/cancer.png"
         zodiacCardTitle.textContent = zodiac[3];
    }
    else if ((inputmonth == 7 && inputday >= 23) || (inputmonth == 8 && inputday <= 22)) {
        //Leo
-       console.log("your zodiac is", zodiac[4])
-       //zodiacv.textContent = zodiac[4];
-       zodiacimage.src = "./zodiacicons/leo.png"
-          zodiacCardTitle.textContent = zodiac[4];
+        console.log("your zodiac is", zodiac[4])
+        zodiacimage.src = "./zodiacicons/leo.png"
+        zodiacCardTitle.textContent = zodiac[4];
    }
    else if ((inputmonth == 8 && inputday >= 23) || (inputmonth == 9 && inputday <= 22)) {
        //Virgo
@@ -120,15 +115,15 @@ $(document).ready(function () {
    }
    else if ((inputmonth == 9 && inputday >= 23) || (inputmonth == 10 && inputday <= 23)) {
        //Libra 
-       console.log("your zodiac is ", zodiac[6])
-       zodiacimage.src = "./zodiacicons/libra.png"
-          zodiacCardTitle.textContent = zodiac[6];
+        console.log("your zodiac is ", zodiac[6])
+        zodiacimage.src = "./zodiacicons/libra.png"
+        zodiacCardTitle.textContent = zodiac[6];
    }
    else if ((inputmonth == 10 && inputday >= 24) || (inputmonth == 11 && inputday <= 21)) {
        //Scorpius
-       console.log("your zodiac is ", zodiac[7])
-       zodiacimage.src = "./zodiacicons/scorpio.png"
-          zodiacCardTitle.textContent = zodiac[7];
+        console.log("your zodiac is ", zodiac[7])
+        zodiacimage.src = "./zodiacicons/scorpio.png"
+        zodiacCardTitle.textContent = zodiac[7];
    }
    else if ((inputmonth == 11 && inputday >= 22) || (inputmonth == 12 && inputday <= 21)) {
        //Sagittarius
@@ -139,9 +134,9 @@ $(document).ready(function () {
    }
    else if ((inputmonth == 12 && inputday >= 22) || (inputmonth == 1 && inputday <= 19)) {
       //Capricornius
-      console.log("your zodiac is ", zodiac[9]) 
-      zodiacimage.src = "./zodiacicons/capricorn.png"
-          zodiacCardTitle.textContent = zodiac[9];
+        console.log("your zodiac is ", zodiac[9]) 
+        zodiacimage.src = "./zodiacicons/capricorn.png"
+        zodiacCardTitle.textContent = zodiac[9];
 
    }
    thirdrow.classList.remove("hide")
@@ -155,13 +150,13 @@ $(document).ready(function () {
 function apicall() {
   var inputvalue = $("#input").val();
     var myHeaders = new Headers();
-    myHeaders.append("x-rapidapi-key", "b0174852bfmsh60c6cac6744b4fep1544d2jsn6df30f1a7489");
+    myHeaders.append("x-rapidapi-key", "a3c413c5f3msh48395bf21bd41c1p13427bjsna2c13ac3d8c1");
     var requestOptions = {
         method: 'GET',
         headers: myHeaders,
         redirect: 'follow'
     };
-    fetch("https://billboard-api2.p.rapidapi.com/hot-100?date="+inputvalue+"&range=1-10&x-rapidapi-key=b0174852bfmsh60c6cac6744b4fep1544d2jsn6df30f1a7489", requestOptions)
+    fetch("https://billboard-api2.p.rapidapi.com/hot-100?date="+inputvalue+"&range=1-10&x-rapidapi-key=a3c413c5f3msh48395bf21bd41c1p13427bjsna2c13ac3d8c1", requestOptions)
         .then(response => response.json())
         .then(result => {
             //console logging data and grabbing th artist and songs title form data and passing that data to other function.
@@ -180,7 +175,7 @@ function apicall() {
             youtubesearch();
             function youtubesearch() {
                 var myHeaders = new Headers();
-                myHeaders.append("x-rapidapi-key", " b0174852bfmsh60c6cac6744b4fep1544d2jsn6df30f1a7489");
+                myHeaders.append("x-rapidapi-key", " a3c413c5f3msh48395bf21bd41c1p13427bjsna2c13ac3d8c1");
                 var requestOptions = {
                     method: 'GET',
                     headers: myHeaders,
@@ -202,7 +197,7 @@ function apicall() {
             }
             gifysearch();
             function gifysearch() {
-                var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + artists + "&api_key=dc6zaTOxFJmzC&limit=4";
+                var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + artists + "&api_key=upkm8ObqRnelIX5yc1yAjTSDjFz9aEmc&limit=4";
                 $.ajax({
                     method: "GET",
                     url: queryURL,
