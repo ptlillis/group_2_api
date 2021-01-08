@@ -155,13 +155,13 @@ $(document).ready(function () {
 function apicall() {
   var inputvalue = $("#input").val();
     var myHeaders = new Headers();
-    myHeaders.append("x-rapidapi-key", "b0174852bfmsh60c6cac6744b4fep1544d2jsn6df30f1a7489");
+    myHeaders.append("x-rapidapi-key", "2fd519c3bbmsh6ec5a6627be1576p102173jsn9abd9df89276");
     var requestOptions = {
         method: 'GET',
         headers: myHeaders,
         redirect: 'follow'
     };
-    fetch("https://billboard-api2.p.rapidapi.com/hot-100?date="+inputvalue+"&range=1-10&x-rapidapi-key=b0174852bfmsh60c6cac6744b4fep1544d2jsn6df30f1a7489", requestOptions)
+    fetch("https://billboard-api2.p.rapidapi.com/hot-100?date="+inputvalue+"&range=1-10&x-rapidapi-key=2fd519c3bbmsh6ec5a6627be1576p102173jsn9abd9df89276", requestOptions)
         .then(response => response.json())
         .then(result => {
             //console logging data and grabbing th artist and songs title form data and passing that data to other function.
@@ -180,7 +180,7 @@ function apicall() {
             youtubesearch();
             function youtubesearch() {
                 var myHeaders = new Headers();
-                myHeaders.append("x-rapidapi-key", " b0174852bfmsh60c6cac6744b4fep1544d2jsn6df30f1a7489");
+                myHeaders.append("x-rapidapi-key", " 2fd519c3bbmsh6ec5a6627be1576p102173jsn9abd9df89276");
                 var requestOptions = {
                     method: 'GET',
                     headers: myHeaders,
@@ -202,7 +202,7 @@ function apicall() {
             }
             gifysearch();
             function gifysearch() {
-                var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + artists + "&api_key=dc6zaTOxFJmzC&limit=4";
+                var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + artists + "&api_key=5qAwmZFJsU819yLCj9ZONXAUWWI2v9wK";
                 $.ajax({
                     method: "GET",
                     url: queryURL,
