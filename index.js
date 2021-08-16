@@ -189,7 +189,7 @@ function apicall() {
                 fetch("https://youtube-search-results.p.rapidapi.com/youtube-search/?q=" + title + artists, requestOptions)
                     .then(response => response.json())
                     .then(result => {
-                        var embedlink = result['items']['1']['link'];
+                        var embedlink = result['items']['1'].author.url;
                         console.log(result);
                         birthdayimage.classList.add("hide")
                           var res = embedlink.split("=");
